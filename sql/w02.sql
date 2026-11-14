@@ -19,7 +19,8 @@ timetable-# ORDER BY courses.code;
 -- 区画8：曜日ごとの授業数（曜日の順）
 SELECT day, COUNT(*) AS total_classes
 FROM courses
-GROUP BY day;
+GROUP BY day
+ORDER BY day;
 
 -- 区画9：建物ごとの授業数と合計単位（建物名の順）
 
